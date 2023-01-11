@@ -167,5 +167,5 @@ function minimizePlayMusic() {
 
 showAndHidePlay()
 playPauseVideo()
-showMusicDuration()
 minimizePlayMusic()
+window.onload = () => showMusicDuration()
