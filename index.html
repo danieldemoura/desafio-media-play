@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./assets/favicon/favicon.png">
+    <title>#boraCodar Media Play</title>
+</head>
+<body>
+    <video muted preload="auto">
+        <source src="./assets/spare-me-reat-lord-opening.mp4" type="video/mp4">
+    </video>
+    <main>
+        <section class="container-play">
+            <section class="play-1">
+                <figure class="poster">
+                    <img src="./assets/album/poster.png" alt="Poster da Música">
+                    <figcaption class="title-music">
+                        <h1>Acorda Devinho</h1>
+                        <h2>Banda Rocketseat</h2>
+                    </figcaption>
+                </figure>
+                <section class="controls">
+                    <button type="button">
+                        <img class="btn-back" src="./assets/button/play-back.svg" alt="Botão para retroceder música">
+                    </button>
+                    <button type="button">
+                        <img class="btn-play" src="./assets/button/play.svg" alt="Botão de Pausar e Tocar Música">
+                    </button>
+                    <button type="button">
+                        <img class="btn-next" src="./assets/button/play-forward.svg" alt="Botão para avançar música">
+                    </button>
+                </section>
+                <section class="container-progress-bar">
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                </section>
+                <section class="music-time">
+                    <span class="time-start">00:00</span>
+                    <span class="time-end">00:00</span>
+                </section>                
+            </section>
+        </section>
+        <section class="container-play">
+            <section class="play-2">
+                <figure class="poster">
+                    <img src="./assets/album/poster.png" alt="Poster da Música">
+                    <figcaption class="title-music">
+                        <h1>Acorda Devinho</h1>
+                        <h2>Banda Rocketseat</h2>
+                    </figcaption>
+                </figure>
+                <section class="controls">
+                    <button type="button">
+                        <img class="btn-back" src="./assets/button/play-back.svg" alt="Botão para retroceder música">
+                    </button>
+                    <button type="button">
+                        <img class="btn-play" src="./assets/button/play.svg" alt="Botão de Pausar e Tocar Música">
+                    </button>
+                    <button type="button">
+                        <img class="btn-next" src="./assets/button/play-forward.svg" alt="Botão para avançar música">
+                    </button>
+                </section>
+                <section class="container-progress-bar">
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                </section>
+                <section class="music-time">
+                    <span class="time-start">00:00</span>
+                    <span class="time-end">00:00</span>
+                </section>                
+            </section>
+            <section class="play-3">
+                <figure class="poster">
+                    <img src="./assets/album/poster.png" alt="Poster da Música">
+                    <figcaption class="title-music">
+                        <h1>Acorda Devinho</h1>
+                        <h2>Banda Rocketseat</h2>
+                    </figcaption>
+                </figure>
+                <section class="controls">
+                    <button type="button">
+                        <img class="btn-back" src="./assets/button/play-back.svg" alt="Botão para retroceder música">
+                    </button>
+                    <button type="button">
+                        <img class="btn-play" src="./assets/button/play.svg" alt="Botão de Pausar e Tocar Música">
+                    </button>
+                    <button type="button">
+                        <img class="btn-next" src="./assets/button/play-forward.svg" alt="Botão para avançar música">
+                    </button>
+                </section>               
+            </section>
+        </section>
+        <div id="music">
+            <audio id="play-music" preload="auto" preload="auto">
+                <source src="./assets/music/your-majesty-spare-your-life.mp3" type="audio/mp3">
+            </audio>
+        </div>
+    </main>
+    <div class="visibility">
+        <img class="eye" src="./assets/button/visibility_off.svg" alt="Um olho com um traço no meio">
+        <img class="btn-play-video" src="./assets/button/play.svg" alt="Botão de Pausar e Tocar">
+        <img id="btn-minimize" src="./assets/button/to-bottom.svg" alt="Botão que ativa e destiva filtros de vídeo">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

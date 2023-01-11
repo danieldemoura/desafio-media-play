@@ -1,0 +1,225 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-body: #0F0D13;
+    --background-play: #2A2141;
+    --music-title-color: #E1E1E6;
+    --music-subtitle-color: #605A70;
+    --title-font: 'Roboto', sans-serif;
+    --background-progress-bar: #605A70;
+    --color-progress-bar: #E1E1E6;
+}
+
+body {
+    display: grid;
+    place-items: center;
+
+    min-height: 100vh;
+    padding: 66px 40px 10px;
+
+    font-family: var(--title-font);
+    background-color: var(--background-body);
+}
+
+video {
+    display: none;
+    width: 100%;
+    height: 100%;
+    
+    position: fixed;
+    top: 0px;
+    left: 0px;
+
+    object-fit: cover;
+    filter: grayscale(1) opacity(0.3);
+    transition: filter 1.5s;
+}
+
+.filter-video {
+    filter: grayscale(0) opacity(1);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+    
+    max-width: 656.20px;
+    position: relative;
+    bottom: 0px;
+    z-index: 2;
+
+    transition: bottom 1s;
+}
+
+.play-1, .play-2, .play-3 {
+    border-radius: 10px;
+    background-color: var(--background-play);
+}
+
+.play-1 {
+    width: 266.48px;
+    height: 498px;
+
+    padding: 50px 38px;
+}
+
+.poster img {
+    width: 191px;
+    border-radius: 10px;
+}
+
+.play-1 .title-music {
+    margin-top: 28.81px;
+    text-align: center;
+}
+
+.title-music h1 {
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--music-title-color);
+}
+
+.title-music h2 {
+    font-size: 19px;
+    font-weight: 400;
+    color: var(--music-subtitle-color);
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+    height: 28.81px;
+    margin: 28.81px 0px;
+}
+
+.controls img {
+    cursor: pointer;
+    padding: 10px 14px;
+}
+
+.controls button {
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: border-radius .1s ease;
+}
+
+.controls button:hover {
+    background-color: #8868cc21;
+    border-radius: 10px;
+
+    display: grid;
+    place-items: center;
+}
+
+.progress-bar {
+    height: 6px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: var(--background-progress-bar);
+}
+
+.progress {
+    width: 0px;
+    height: 6px;
+    background-color: var(--color-progress-bar);
+}
+
+.music-time {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--music-subtitle-color);
+}
+
+
+section.container-play:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.play-2, .play-3 {
+    width: 357.71px;
+    height: 266.68px;
+
+    padding: 28px 29px;
+}
+
+.play-2 .poster, .play-3 .poster {
+    display: flex;
+    gap: 28.81px;
+}
+
+.play-2 .poster img, .play-3 .poster img {
+    width: 84px;
+}
+
+.title-music {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.play-3 {
+    height: 199px;
+}
+
+.visibility {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    position: fixed;
+    z-index: 3;
+    top: 20px;
+    right: 20px;
+
+    width: 50px;
+    padding: 20px 10px;
+    border-radius: 10px;
+    text-align: center;
+
+    box-shadow: 0px 0px 5px var(--music-subtitle-color);
+    background-color: var(--background-play);
+}
+
+.eye {
+    filter: invert(100%) sepia(80%) saturate(2%) hue-rotate(42deg) brightness(107%) contrast(101%);
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-play-video, .btn-filter, #btn-minimize {
+    cursor: pointer;
+    height: 25px;
+}
+
+/* Class que oculta a Div Main */
+.hide {
+    display: none;
+}
+
+.minimize {
+    bottom: -410px;
+    position: fixed;
+}
