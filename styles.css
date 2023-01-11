@@ -15,8 +15,8 @@
 }
 
 body {
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
 
     min-height: 100vh;
     padding: 66px 40px 10px;
